@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap");
+
+body {
+  background-color: #fde0d8 !important;
+}
+
+/* Wrapper 1 */
+
+.wrapper-1 {
+  height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 15%;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: black;
+}
+
+.sub-logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: black;
+}
+
+.nav-links-container {
+  margin-right: 150px;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: black;
+}
+.nav-link.active {
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: black;
+}
+
+/* Shopping cart */
+
+.shopping-cart {
+  position: fixed;
+  top: 20px;
+  right: 60px;
+}
+
+/* Content */
+
+.content {
+  height: 75%;
+}
+
+.content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.content h2 {
+  max-width: 575px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.content button {
+  border: none;
+
+  background-color: black;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+
+  width: 320px;
+  height: 75px;
+}
+
+/* Empty block */
+
+.empty-block {
+  height: 10%;
+}
