@@ -35,7 +35,7 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar d-none d-lg-flex">
+    <nav class="navbar d-none d-lg-flex mx-5 px-0">
       <a
         class="navbar-brand d-flex flex-column align-items-center-justify-content-center"
         href="#"
@@ -44,7 +44,7 @@
         <span class="sub-logo">Less is more</span>
       </a>
       <div class="d-flex align-items-center">
-        <ul class="d-flex nav-links-container mb-0 mr-5">
+        <ul class="d-flex nav-links-container mb-0 pl-0">
           <li class="nav-item">
             <a class="nav-link" href="#">Каталог</a>
           </li>
@@ -87,7 +87,7 @@
           </svg>
         </div>
         <a
-          class="navbar-brand d-flex flex-column align-items-center-justify-content-center"
+          class="navbar-brand d-flex flex-column align-items-center-justify-content-center ml-5"
           href="#"
         >
           <span class="logo">Parflab</span>
@@ -98,7 +98,7 @@
         </div>
       </div>
       <ul
-        class="d-none flex-column nav-links-container-mobile position-absolute px-3 py-2 animate__animated animate__slideInDown"
+        class="d-none flex-column nav-links-container-mobile position-absolute px-3 py-2 animate__animated animate__slideOutUp"
         style="z-index: 0;"
       >
         <li class="nav-item">
@@ -118,17 +118,45 @@
         </li>
       </ul>
     </nav>
-    <h1>123</h1>
+    <div
+      class="content d-flex flex-column-reverse justify-content-center flex-lg-row mx-5"
+    >
+      <div
+        class="d-flex flex-column justify-content-center align-items-center align-items-lg-start"
+      >
+        <h1 class="pb-xl-2 pb-0">Ваш личный парфдиллер</h1>
+        <h2 class="pb-xl-4 pb-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut
+          neque sit amet sem iaculis posuere.
+        </h2>
+        <button>Магазин</button>
+      </div>
+      <div
+        class="d-flex align-items-center justify-content-lg-end justify-content-center mb-5 mb-lg-0 w-100"
+      >
+        <div class="d-flex flex-column justify-content-between mr-lg-5 mr-3">
+          <img src="./assets/1.png" class="picture-1" />
+          <img src="./assets/2.png" class="picture-2" />
+        </div>
+        <div class="">
+          <img src="./assets/3.png" class="picture-3" />
+        </div>
+      </div>
+    </div>
   </body>
   <script>
     const hamburgerMenu = document.getElementById("hamburger-menu");
     const navLinksContainerMobile = document.getElementsByClassName(
       "nav-links-container-mobile"
     )[0];
-    console.log(navLinksContainerMobile);
     hamburgerMenu.addEventListener("click", () => {
-      navLinksContainerMobile.classList.toggle("d-none");
+      setTimeout(
+        () => navLinksContainerMobile.classList.toggle("d-none"),
+        1000
+      );
       navLinksContainerMobile.classList.toggle("d-flex");
+      navLinksContainerMobile.classList.toggle("animate__slideInDown");
+      navLinksContainerMobile.classList.toggle("animate__slideOutUp");
     });
   </script>
 </html>
