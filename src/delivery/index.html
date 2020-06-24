@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parflab | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <!-- Bootstrap only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar d-none d-lg-flex mx-5 px-0">
+      <a
+        class="navbar-brand d-flex flex-column align-items-center-justify-content-center"
+        href="#"
+      >
+        <span class="logo">Parflab</span>
+        <span class="sub-logo">Less is more</span>
+      </a>
+      <div class="d-flex align-items-center">
+        <ul class="d-flex nav-links-container mb-0 pl-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Доставка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Отзывы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">События</a>
+          </li>
+        </ul>
+        <div class="shopping-cart">
+          <img src="./assets/Shopping Cart.png" alt="" />
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar d-flex d-lg-none position-relative p-0">
+      <div
+        class="d-flex align-items-center justify-content-between w-100"
+        style="z-index: 10; background-color: #fde0d8;"
+      >
+        <div id="hamburger-menu">
+          <svg
+            class="ml-3"
+            width="25"
+            height="22"
+            viewBox="0 0 25 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.892857 4.04082H24.1071C24.6003 4.04082 25 3.63881 25 3.14286V0.897959C25 0.402005 24.6003 0 24.1071 0H0.892857C0.399721 0 0 0.402005 0 0.897959V3.14286C0 3.63881 0.399721 4.04082 0.892857 4.04082ZM0.892857 13.0204H24.1071C24.6003 13.0204 25 12.6184 25 12.1224V9.87755C25 9.3816 24.6003 8.97959 24.1071 8.97959H0.892857C0.399721 8.97959 0 9.3816 0 9.87755V12.1224C0 12.6184 0.399721 13.0204 0.892857 13.0204ZM0.892857 22H24.1071C24.6003 22 25 21.598 25 21.102V18.8571C25 18.3612 24.6003 17.9592 24.1071 17.9592H0.892857C0.399721 17.9592 0 18.3612 0 18.8571V21.102C0 21.598 0.399721 22 0.892857 22Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+        <a
+          class="navbar-brand d-flex flex-column align-items-center-justify-content-center ml-5"
+          href="#"
+        >
+          <span class="logo">Parflab</span>
+          <span class="sub-logo">Less is more</span>
+        </a>
+        <div class="shopping-cart">
+          <img src="./assets/Shopping Cart.png" alt="" />
+        </div>
+      </div>
+      <ul
+        class="d-none flex-column nav-links-container-mobile position-absolute px-3 py-2 animate__animated animate__slideOutUp"
+        style="z-index: 0;"
+      >
+        <li class="nav-item">
+          <a class="nav-link" href="#">Каталог</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Доставка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Отзывы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">События</a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="content d-flex flex-column-reverse justify-content-center flex-lg-row-reverse"
+    >
+      <div
+        class="d-flex flex-column justify-content-center align-items-center align-items-lg-start w-100 ml-lg-5"
+      >
+        <h2>Для Новосибирска</h2>
+        <p class="ml-lg-5">
+          Яндекс.Такси: от 150р, при заказе от 3000р - бесплатно, отдаленные
+          районы от 5000
+        </p>
+        <p class="ml-lg-5">СДЭК, пункт выдачи: 150 р</p>
+        <h2>В другие города</h2>
+        <p class="ml-lg-5">
+          Почта первым классом: 300р
+        </p>
+        <p class="ml-lg-5">СДЭК: расчитывается индивидуально</p>
+      </div>
+      <div
+        class="d-flex flex-row-reverse align-items-center justify-content-lg-end justify-content-center mb-5 mb-lg-0 w-100"
+      >
+        <div class="d-flex flex-column justify-content-between ml-lg-5 ml-3">
+          <img src="./assets/1.png" class="picture-1" />
+          <img src="./assets/2.png" class="picture-2" />
+        </div>
+        <div class="">
+          <img src="./assets/3.png" class="picture-3" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navLinksContainerMobile = document.getElementsByClassName(
+      "nav-links-container-mobile"
+    )[0];
+    hamburgerMenu.addEventListener("click", () => {
+      setTimeout(
+        () => navLinksContainerMobile.classList.toggle("d-none"),
+        1000
+      );
+      navLinksContainerMobile.classList.toggle("d-flex");
+      navLinksContainerMobile.classList.toggle("animate__slideInDown");
+      navLinksContainerMobile.classList.toggle("animate__slideOutUp");
+    });
+  </script>
+</html>

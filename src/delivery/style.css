@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap");
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #fde0d8 !important;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Wrapper */
+
+.wrapper {
+  height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 15%;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: black;
+}
+
+.sub-logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: black;
+}
+
+.nav-links-container-mobile {
+  background-color: #fde0d8;
+  bottom: -275px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: black;
+}
+.nav-link.active {
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: black;
+}
+
+/* Shopping Cart */
+
+.shopping-cart {
+  transform: scale(0.8);
+}
+
+/* Content */
+
+.content {
+  height: 85vh;
+}
+
+@media (min-width: 992px) {
+  .content {
+    width: 84%;
+    margin: auto;
+  }
+}
+
+.content h2 {
+  max-width: 80%;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.content p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 90%;
+}
+
+.content img {
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.picture-1,
+.picture-2 {
+  width: 116px;
+  height: 116px;
+}
+
+.picture-1 {
+  margin-bottom: 9px;
+}
+
+.picture-2 {
+  margin-top: 9px;
+}
+
+.picture-3 {
+  width: 176px;
+  height: 250px;
+}
+
+@media (min-width: 576px) {
+  .content h2 {
+    max-width: 80%;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .content p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 70%;
+  }
+
+  .picture-1,
+  .picture-2 {
+    width: 144px;
+    height: 144px;
+  }
+
+  .picture-1 {
+    margin-bottom: 13px;
+  }
+
+  .picture-2 {
+    margin-top: 13px;
+  }
+
+  .picture-3 {
+    width: 219px;
+    height: 314px;
+  }
+
+  .content button {
+    font-size: 18px;
+
+    width: 260px;
+    height: 49px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .content p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 70%;
+  }
+
+  .picture-1,
+  .picture-2 {
+    width: 193px;
+    height: 193px;
+  }
+
+  .picture-1 {
+    margin-bottom: 17px;
+  }
+
+  .picture-2 {
+    margin-top: 17px;
+  }
+
+  .picture-3 {
+    width: 292px;
+    height: 420px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content h2 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .content p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 100%;
+  }
+
+  .picture-1,
+  .picture-2 {
+    width: 157px;
+    height: 157px;
+  }
+
+  .picture-1 {
+    margin-bottom: 13px;
+  }
+
+  .picture-2 {
+    margin-top: 13px;
+  }
+
+  .picture-3 {
+    width: 237px;
+    height: 340px;
+  }
+}
+
+@media (min-width: 1210px) {
+  .content h2 {
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  .content p {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .picture-1,
+  .picture-2 {
+    width: 193px;
+    height: 193px;
+  }
+
+  .picture-1 {
+    margin-bottom: 17px;
+  }
+
+  .picture-2 {
+    margin-top: 17px;
+  }
+
+  .picture-3 {
+    width: 292px;
+    height: 420px;
+  }
+}
+
+@media (min-width: 1330px) {
+  .content h2 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .content p {
+    font-weight: 400;
+    font-size: 26px;
+    max-width: 500px;
+  }
+
+  .picture-1,
+  .picture-2 {
+    width: 242px;
+    height: 242px;
+  }
+
+  .picture-1 {
+    margin-bottom: 21px;
+  }
+
+  .picture-2 {
+    margin-top: 21px;
+  }
+
+  .picture-3 {
+    width: 366px;
+    height: 526px;
+  }
+}
+
+/* Empty block */
+
+.empty-block {
+  height: 10%;
+}
