@@ -72,6 +72,13 @@ ul {
   height: 85vh;
 }
 
+@media (min-width: 992px) {
+  .content {
+    width: 84%;
+    margin: auto;
+  }
+}
+
 .content h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 41px;
@@ -267,6 +274,22 @@ ul {
 }
 
 @media (min-width: 1330px) {
+  .content h1 {
+    font-size: 60px;
+  }
+
+  .content h2 {
+    max-width: 80%;
+    font-size: 24px;
+  }
+
+  .content button {
+    font-size: 24px;
+
+    width: 320px;
+    height: 75px;
+  }
+
   .picture-1,
   .picture-2 {
     width: 242px;
