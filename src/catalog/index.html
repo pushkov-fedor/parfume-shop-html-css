@@ -69,7 +69,7 @@
     <nav class="navbar d-flex d-lg-none position-relative p-0">
       <div
         class="d-flex align-items-center justify-content-between w-100"
-        style="z-index: 10; background-color: #fde0d8;"
+        style="z-index: 100; background-color: #fde0d8;"
       >
         <div id="hamburger-menu">
           <svg
@@ -93,13 +93,14 @@
           <span class="logo">Parflab</span>
           <span class="sub-logo">Less is more</span>
         </a>
+        <div style="visibility: hidden; width: 70px; height: 70px;"></div>
         <div class="shopping-cart">
           <img src="./assets/Shopping Cart.png" alt="" />
         </div>
       </div>
       <ul
         class="d-none flex-column nav-links-container-mobile position-absolute px-3 py-2 animate__animated animate__slideOutUp"
-        style="z-index: 0;"
+        style="z-index: 10;"
       >
         <li class="nav-item">
           <a class="nav-link" href="#">Каталог</a>
@@ -118,7 +119,7 @@
         </li>
       </ul>
     </nav>
-    <div class="content mx-5 mt-3 d-flex">
+    <div class="content mx-1 mx-lg-5 mt-3 d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
       <!-- Filters -->
       <div class="filters">
         <div class="parfume d-flex flex-column align-items-center">
@@ -139,7 +140,7 @@
       <!-- Products -->
       <div class="row products mx-5">
         <div
-          class="col-4 d-flex align-items-center justify-content-center my-4"
+          class="col-sm-6 d-flex align-items-center justify-content-center my-4"
         >
           <div class="product d-flex flex-column">
             <div class="img-wrapper mb-2">
@@ -175,7 +176,7 @@
           </div>
         </div>
         <div
-          class="col-4 d-flex align-items-center justify-content-center my-4"
+          class="col-sm-6 d-flex align-items-center justify-content-center my-4"
         >
           <div class="product d-flex flex-column">
             <div class="img-wrapper mb-2">
@@ -211,7 +212,7 @@
           </div>
         </div>
         <div
-          class="col-4 d-flex align-items-center justify-content-center my-4"
+          class="col-sm-6 d-flex align-items-center justify-content-center my-4"
         >
           <div class="product d-flex flex-column">
             <div class="img-wrapper mb-2">
@@ -247,7 +248,7 @@
           </div>
         </div>
         <div
-          class="col-4 d-flex align-items-center justify-content-center my-4"
+          class="col-sm-6 d-flex align-items-center justify-content-center my-4"
         >
           <div class="product d-flex flex-column">
             <div class="img-wrapper mb-2">
