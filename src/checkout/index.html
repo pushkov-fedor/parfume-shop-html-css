@@ -123,52 +123,107 @@
         </li>
       </ul>
     </nav>
-    <div class="container mt-4">
-      <div class="cart-line d-flex justify-content-center mb-5">
-        <div
-          class="content-container d-flex flex-column flex-md-row align-items-center position-relative"
-        >
-          <div class="close-wrapper">
-            <img src="./assets/close.png" alt="" class="mx-0 mx-md-4" />
+    <div class="container mt-4 d-flex justify-content-center">
+      <form action="">
+        <h1 class="mb-4 text-center">Оформление заказа</h1>
+        <div class="radio-buttons d-flex justify-content-between my-2">
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1">Самовывоз</label>
           </div>
-          <img src="./assets/product1.png" alt="" />
-          <div class="description d-flex flex-column mt-4 mt-md-0">
-            <h2 class="pb-3 pb-md-1">Tiziana Terenzi</h2>
-            <p class="mb-2 d-none d-md-block">
-              Ольфакторное воплощение парижского бутика бренда, расположенного
-              на улице Сент-Оноре, 352.
-            </p>
-            <span>1300₽, 5мл</span>
-          </div>
-          <div class="amount-controls d-flex align-items-center mt-2 mt-md-0">
-            <img src="./assets/minus.png" alt="" />
-            <span class="current mx-4">1</span>
-            <img src="./assets/plus.png" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="cart-line d-flex justify-content-center mb-5">
-        <div
-          class="content-container d-flex flex-column flex-md-row align-items-center position-relative"
-        >
-          <div class="close-wrapper">
-            <img src="./assets/close.png" alt="" class="mx-0 mx-md-4" />
-          </div>
-          <img src="./assets/product2.png" alt="" />
-          <div class="description d-flex flex-column mt-4 mt-md-0">
-            <h2 class="pb-3 pb-md-1">Basilico & Fellini</h2>
-            <p class="mb-2 d-none d-md-block">
-              Свежий и сверкающий, как утренняя прогулка в саду Тюильри.
-            </p>
-            <span>1100₽, 5мл</span>
-          </div>
-          <div class="amount-controls d-flex align-items-center mt-2 mt-md-0">
-            <img src="./assets/minus.png" alt="" />
-            <span class="current mx-4">1</span>
-            <img src="./assets/plus.png" alt="" />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2">Доставка</label>
           </div>
         </div>
-      </div>
+        <!-- Если выбрали самовывоз -->
+
+        <!-- <div class="self-form">
+          <div class="form-group my-2">
+            <label for="self-form-fio">ФИО</label>
+            <input
+              type="text"
+              class="form-control"
+              id="self-form-fio"
+              placeholder="Фамилия Имо Отчество"
+            />
+          </div>
+          <div class="form-group my-2">
+            <label for="self-form-phone">Телефон</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="self-form-phone"
+              placeholder="Телефон"
+            />
+          </div>
+          <div class="btn-wrapper d-flex justify-content-center mt-5">
+            <button>Заказать</button>
+          </div>
+        </div> -->
+
+        <!-- Если выбрали доставку -->
+        <div class="delivery-form">
+          <div class="form-group my-2">
+            <label for="delivery-form-fio">ФИО</label>
+            <input
+              type="text"
+              class="form-control"
+              id="delivery-form-fio"
+              placeholder="Фамилия Имо Отчество"
+            />
+          </div>
+          <div class="form-group my-2">
+            <label for="delivery-form-phone">Телефон</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="delivery-form-phone"
+              placeholder="Телефон"
+            />
+          </div>
+          <div class="form-group my-2">
+            <label for="delivery-form-city">Город</label>
+            <select class="form-control" id="delivery-form-city">
+              <option>Новосибирск</option>
+              <option>Москва</option>
+              <option>Санкт-Петербург</option>
+            </select>
+          </div>
+          <div class="form-group my-2">
+            <label for="delivery-form-address">Адрес</label>
+            <input
+              type="text"
+              class="form-control"
+              id="delivery-form-address"
+              placeholder="Адрес"
+            />
+          </div>
+          <div class="form-group my-2">
+            <label for="delivery-form-city">Способ доставки</label>
+            <select class="form-control" id="delivery-form-city">
+              <option>СДЭК, курьером</option>
+              <option>СДЭК, пункт выдачи</option>
+              <option>Яндекс.Такси</option>
+            </select>
+          </div>
+        </div>
+        <div class="btn-wrapper d-flex justify-content-center mt-5">
+          <button>Заказать</button>
+        </div>
+      </form>
     </div>
   </body>
   <script>

@@ -68,72 +68,63 @@ ul {
 
 /* Content */
 
-.close-wrapper {
-  height: 100%;
+form {
+  width: 485px;
 }
 
-.content-container > img {
-  width: 180px;
-  height: 240px;
-  border-radius: 5px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-.description {
-  margin: 0 25px;
-  max-width: 400px;
-}
-
-.description h2 {
+form h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 32px;
-  border-bottom: 1px solid black;
+  font-size: 26px;
 }
 
-.description p {
+.form-check input[type="radio"] {
+  transform: scale(1.2);
+}
+
+.form-check label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.form-group label {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
 
-.description span {
+.form-group input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+.form-group input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.form-group select {
+  border: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("./assets/chevron.svg") 93% / 4% no-repeat
+    rgba(255, 255, 255, 0.5);
 }
 
-.amount-controls {
-  margin-left: 25px;
-}
-
-.amount-controls .current {
+form button {
+  border: none;
+  background-color: black;
+  color: white;
+  width: 215px;
+  height: 44px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 32px;
-}
-
-@media (max-width: 767px) {
-  .close-wrapper {
-    height: auto;
-    position: absolute;
-    top: 5px;
-    left: -5px;
-  }
-
-  .description {
-    text-align: center;
-  }
-
-  .description h2 {
-    font-size: 26px;
-  }
-
-  .description span {
-    font-size: 20px;
-  }
-
-  .amount-controls {
-    margin-left: 0;
-  }
+  font-size: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
