@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap");
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #fde0d8 !important;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Wrapper */
+
+.wrapper {
+  height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 15%;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: black;
+}
+
+.sub-logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: black;
+}
+
+.nav-links-container-mobile {
+  background-color: #fde0d8;
+  bottom: -275px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: black;
+}
+.nav-link.active {
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: black;
+}
+
+/* Shopping Cart */
+
+.shopping-cart {
+  transform: scale(0.8);
+}
+
+/* Content */
+
+.close-wrapper {
+  height: 100%;
+}
+
+.content-container > img {
+  width: 180px;
+  height: 240px;
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.description {
+  margin: 0 25px;
+  max-width: 400px;
+}
+
+.description h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  border-bottom: 1px solid black;
+}
+
+.description p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.description span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.amount-controls {
+  margin-left: 25px;
+}
+
+.amount-controls .current {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+@media (max-width: 767px) {
+  .close-wrapper {
+    height: auto;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .description h2 {
+    font-size: 26px;
+  }
+
+  .description span {
+    font-size: 20px;
+  }
+
+  .amount-controls {
+    margin-left: 0;
+  }
+}
