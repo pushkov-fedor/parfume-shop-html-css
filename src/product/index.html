@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parflab | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <!-- Bootstrap only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar d-none d-lg-flex mx-5 px-0">
+      <a
+        class="navbar-brand d-flex flex-column align-items-center-justify-content-center"
+        href="#"
+      >
+        <span class="logo">Parflab</span>
+        <span class="sub-logo">Less is more</span>
+      </a>
+      <div class="d-flex align-items-center">
+        <ul class="d-flex nav-links-container mb-0 pl-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Доставка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Отзывы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">События</a>
+          </li>
+        </ul>
+        <div class="shopping-cart">
+          <img src="./assets/Shopping Cart.png" alt="" />
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar d-flex d-lg-none position-relative p-0">
+      <div
+        class="d-flex align-items-center justify-content-between w-100"
+        style="z-index: 10; background-color: #fde0d8;"
+      >
+        <div id="hamburger-menu">
+          <svg
+            class="ml-3"
+            width="25"
+            height="22"
+            viewBox="0 0 25 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.892857 4.04082H24.1071C24.6003 4.04082 25 3.63881 25 3.14286V0.897959C25 0.402005 24.6003 0 24.1071 0H0.892857C0.399721 0 0 0.402005 0 0.897959V3.14286C0 3.63881 0.399721 4.04082 0.892857 4.04082ZM0.892857 13.0204H24.1071C24.6003 13.0204 25 12.6184 25 12.1224V9.87755C25 9.3816 24.6003 8.97959 24.1071 8.97959H0.892857C0.399721 8.97959 0 9.3816 0 9.87755V12.1224C0 12.6184 0.399721 13.0204 0.892857 13.0204ZM0.892857 22H24.1071C24.6003 22 25 21.598 25 21.102V18.8571C25 18.3612 24.6003 17.9592 24.1071 17.9592H0.892857C0.399721 17.9592 0 18.3612 0 18.8571V21.102C0 21.598 0.399721 22 0.892857 22Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+        <a
+          class="navbar-brand d-flex flex-column align-items-center-justify-content-center ml-5"
+          href="#"
+        >
+          <span class="logo">Parflab</span>
+          <span class="sub-logo">Less is more</span>
+        </a>
+        <div class="shopping-cart">
+          <img src="./assets/Shopping Cart.png" alt="" />
+        </div>
+      </div>
+      <ul
+        class="d-none flex-column nav-links-container-mobile position-absolute px-3 py-2 animate__animated animate__slideOutUp"
+        style="z-index: 0;"
+      >
+        <li class="nav-item">
+          <a class="nav-link" href="#">Каталог</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Доставка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Отзывы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">События</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="back mx-lg-5 mx-3 mt-3">
+      <a href="#"
+        ><svg
+          width="11"
+          height="11"
+          viewBox="0 0 11 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1.46667 5.5L5.86392 1.10274C6.06873 0.897937 6.06917 0.569171 5.86667 0.366667C5.66275 0.16275 5.33461 0.165391 5.13059 0.369411L0.369411 5.13059L0.368041 5.13196L0.366667 5.13333C0.265165 5.23484 0.214841 5.36712 0.215057 5.49955C0.215351 5.63378 0.265867 5.76587 0.366667 5.86667L0.368042 5.86804L0.369411 5.86941L5.13059 10.6306C5.3354 10.8354 5.66416 10.8358 5.86667 10.6333C6.07058 10.4294 6.06794 10.1013 5.86392 9.89726L1.46667 5.5Z"
+            fill="black"
+            fill-opacity="0.8"
+          />
+        </svg>
+        Назад в каталог
+      </a>
+    </div>
+    <div
+      class="container d-flex flex-md-row align-items-center align-items-md-start flex-column my-4 px-0"
+    >
+      <div
+        class="left d-flex flex-column align-items-lg-end align-items-center mr-lg-5"
+      >
+        <div class="left-wrapper d-flex flex-column align-items-center">
+          <img src="./assets/product.png" alt="" />
+          <div class="slider-navigation d-flex align-items-center mt-3">
+            <svg
+              width="31"
+              height="18"
+              viewBox="0 0 31 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.124565 9.345L8.12469 17.845C8.31834 18.0471 8.6493 18.0486 8.83575 17.8685C9.02525 17.6856 9.03915 17.3497 8.85925 17.1575L1.65603 9.5012L30.5 9.5012C30.7761 9.5012 31 9.27735 31 9.0012C31 8.72505 30.7761 8.50119 30.5 8.50119L1.65603 8.50119L8.85925 0.844913C9.0393 0.652664 9.0282 0.31386 8.83575 0.13386C8.64345 -0.0461407 8.33399 -0.0505924 8.12469 0.157358L0.124565 8.6574C-0.0655861 8.8914 -0.0155859 9.1782 0.124565 9.345Z"
+                fill="black"
+              />
+            </svg>
+            <span class="current mx-3">1/4</span>
+            <svg
+              width="31"
+              height="18"
+              viewBox="0 0 31 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.8754 8.65525L22.8753 0.15521C22.6817 -0.0468909 22.3507 -0.0483414 22.1642 0.131709C21.9747 0.31466 21.9608 0.650512 22.1407 0.842763L29.344 8.49905L0.5 8.49905C0.22385 8.49905 -1.90735e-06 8.7229 -1.90735e-06 8.99905C-1.90735e-06 9.2752 0.22385 9.49905 0.5 9.49905L29.344 9.49905L22.1407 17.1553C21.9607 17.3476 21.9718 17.6864 22.1642 17.8664C22.3565 18.0464 22.666 18.0508 22.8753 17.8429L30.8754 9.34285C31.0656 9.10885 31.0156 8.82205 30.8754 8.65525Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div
+            class="sizes d-none d-md-flex justify-content-between align-items-center w-100 mt-3 px-1"
+          >
+            <span>Объём</span>
+            <select class="px-4 py-2">
+              <option class="py-2">5 мл</option>
+              <option>8 мл</option>
+            </select>
+          </div>
+          <div
+            class="prices d-none d-md-flex justify-content-between align-items-center w-100 mt-3 px-1"
+          >
+            <span class="price-header">Цена</span>
+            <span class="price">1300₽</span>
+          </div>
+        </div>
+      </div>
+      <div class="right ml-lg-5">
+        <h1>Good Girl Gone Bad Eau Fraîche</h1>
+        <h2>Описание</h2>
+        <p>
+          Ольфакторное воплощение парижского бутика бренда, расположенного на
+          улице Сент-Оноре, 352. Нежные брызги итальянского лимона бьют в самое
+          сердце горьковатых цветов апельсина, окруженных фоном из белого кедра,
+          гуакового дерева и белого мускуса. Свежий и сверкающий, как утренняя
+          прогулка в саду Тюильри.
+        </p>
+        <h2>Пирамида ароматов</h2>
+        <p><b>Верхние ноты:</b> итальянский лимон, ягоды можжевельника.</p>
+        <p><b>Средние ноты:</b> апельсиновый цвет, роза, ландыш.</p>
+        <p><b>Нижние ноты:</b> белый кедр, гуаяк, белый мускус.</p>
+        <div
+          class="sizes d-flex d-md-none justify-content-between align-items-center w-100 mt-3 px-1"
+        >
+          <span>Объём</span>
+          <select class="px-4 py-2">
+            <option class="py-2">5 мл</option>
+            <option>8 мл</option>
+          </select>
+        </div>
+        <div
+          class="prices d-flex d-md-none justify-content-between align-items-center w-100 mt-3 px-1"
+        >
+          <span class="price-header">Цена</span>
+          <span class="price">1300₽</span>
+        </div>
+      </div>
+    </div>
+    <div class="buy-btn-wrapper d-flex justify-content-center my-4">
+      <button>Купить</button>
+    </div>
+  </body>
+  <script>
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navLinksContainerMobile = document.getElementsByClassName(
+      "nav-links-container-mobile"
+    )[0];
+    hamburgerMenu.addEventListener("click", () => {
+      setTimeout(
+        () => navLinksContainerMobile.classList.toggle("d-none"),
+        1000
+      );
+      navLinksContainerMobile.classList.toggle("d-flex");
+      navLinksContainerMobile.classList.toggle("animate__slideInDown");
+      navLinksContainerMobile.classList.toggle("animate__slideOutUp");
+    });
+  </script>
+</html>

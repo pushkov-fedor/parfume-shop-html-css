@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap");
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #fde0d8 !important;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Wrapper */
+
+.wrapper {
+  height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 15%;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: black;
+}
+
+.sub-logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: black;
+}
+
+.nav-links-container-mobile {
+  background-color: #fde0d8;
+  bottom: -275px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: black;
+}
+.nav-link.active {
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: black;
+}
+
+/* Shopping Cart */
+
+.shopping-cart {
+  transform: scale(0.8);
+}
+
+/* Back */
+
+.back a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.back a:hover,
+.back a:active {
+  outline: none;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Content */
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.left img {
+  width: 406px;
+  height: 406px;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    max-width: 95% !important;
+  }
+
+  .left img {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95% !important;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left img {
+    width: 330px;
+    height: 330px;
+  }
+
+  .left .left-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .left img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.slider-navigation .current {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.sizes span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.sizes select {
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("./assets/chevron.svg") 93% / 9% no-repeat black;
+  text-align: center;
+  text-align-last: center;
+  text-align-last: -webkit-center;
+  text-align: -webkit-center;
+  width: 165px;
+  height: 35px;
+}
+
+.prices .price-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.prices .price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+@media (max-width: 576px) {
+  .slider-navigation .current {
+    font-size: 24px;
+  }
+
+  .sizes span {
+    font-size: 20px;
+  }
+
+  .sizes select {
+    width: 132px;
+  }
+
+  .prices .price-header {
+    font-size: 20px;
+  }
+
+  .prices .price {
+    font-size: 24px;
+  }
+}
+
+.right h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.right h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.right p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 576px) {
+  .right {
+    text-align: center;
+  }
+
+  .right h1 {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+
+  .right h2 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+}
+
+/* Buy button */
+
+.buy-btn-wrapper button {
+  width: 215px;
+  height: 44px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
