@@ -35,6 +35,7 @@
     ></script>
   </head>
   <body>
+    <!-- Navbar для широких экранов -->
     <nav class="navbar d-none d-lg-flex mx-5 px-0">
       <a
         class="navbar-brand d-flex flex-column align-items-center-justify-content-center"
@@ -66,6 +67,7 @@
         </div>
       </div>
     </nav>
+    <!-- Navbar для мобильных экранов -->
     <nav class="navbar d-flex d-lg-none position-relative p-0">
       <div
         class="d-flex align-items-center justify-content-between w-100"
@@ -119,7 +121,9 @@
         </li>
       </ul>
     </nav>
-    <div class="content mx-1 mx-lg-5 mt-3 d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
+    <div
+      class="content mx-1 mx-lg-5 mt-3 d-flex flex-column flex-lg-row align-items-center align-items-lg-start"
+    >
       <!-- Filters -->
       <div class="filters">
         <div class="parfume d-flex flex-column align-items-center">
@@ -139,6 +143,7 @@
       </div>
       <!-- Products -->
       <div class="row products mx-5">
+        <!-- Product item -->
         <div
           class="col-sm-6 d-flex align-items-center justify-content-center my-4"
         >
@@ -175,6 +180,7 @@
             </div>
           </div>
         </div>
+        <!-- Product item -->
         <div
           class="col-sm-6 d-flex align-items-center justify-content-center my-4"
         >
@@ -211,6 +217,7 @@
             </div>
           </div>
         </div>
+        <!-- Product item -->
         <div
           class="col-sm-6 d-flex align-items-center justify-content-center my-4"
         >
@@ -247,6 +254,7 @@
             </div>
           </div>
         </div>
+        <!-- Product item -->
         <div
           class="col-sm-6 d-flex align-items-center justify-content-center my-4"
         >
@@ -285,6 +293,7 @@
         </div>
       </div>
     </div>
+    <!-- Скрипт для визуализации тулбара -->
     <script>
       const hamburgerMenu = document.getElementById("hamburger-menu");
       const navLinksContainerMobile = document.getElementsByClassName(

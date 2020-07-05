@@ -38,7 +38,7 @@
     <div class="wrapper d-flex flex-column flex-lg-row">
       <div class="left-block position-relative">
         <div class="left-block-wrapper">
-          <!-- Navbar для мобильных экранов + логотип -->
+          <!-- Navbar для мобильных экранов -->
           <div class="navbar justify-content-xl-center">
             <div id="hamburger-menu" class="d-xl-none">
               <svg
@@ -132,22 +132,26 @@
         <div
           class="map-container d-flex align-items-center justify-content-center"
         >
-          <!-- Вместо этого тэга должна быть карта -->
+          <!-- Вместо этого тэга должна быть Яндекс карта -->
           <div class="map w-100 bg-dark mb-xl-5"></div>
         </div>
       </div>
     </div>
+    <!-- Скрипт для анимации тулбара -->
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinksContainerMobile = document.getElementsByClassName(
+        "nav-links-container-mobile"
+      )[0];
+      hamburgerMenu.addEventListener("click", () => {
+        setTimeout(
+          () => navLinksContainerMobile.classList.toggle("d-none"),
+          800
+        );
+        navLinksContainerMobile.classList.toggle("d-flex");
+        navLinksContainerMobile.classList.toggle("animate__slideInDown");
+        navLinksContainerMobile.classList.toggle("animate__fadeOutUp");
+      });
+    </script>
   </body>
-  <script>
-    const hamburgerMenu = document.getElementById("hamburger-menu");
-    const navLinksContainerMobile = document.getElementsByClassName(
-      "nav-links-container-mobile"
-    )[0];
-    hamburgerMenu.addEventListener("click", () => {
-      setTimeout(() => navLinksContainerMobile.classList.toggle("d-none"), 800);
-      navLinksContainerMobile.classList.toggle("d-flex");
-      navLinksContainerMobile.classList.toggle("animate__slideInDown");
-      navLinksContainerMobile.classList.toggle("animate__fadeOutUp");
-    });
-  </script>
 </html>

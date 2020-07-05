@@ -33,13 +33,9 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <!-- FontAwesome -->
-    <script
-      src="https://kit.fontawesome.com/bbf6fd1fff.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
+    <!-- Navbar для широких экранов -->
     <nav class="navbar d-none d-lg-flex mx-5 px-0">
       <a
         class="navbar-brand d-flex flex-column align-items-center-justify-content-center"
@@ -71,6 +67,7 @@
         </div>
       </div>
     </nav>
+    <!-- Navbar для мобильных экранов -->
     <nav class="navbar d-flex d-lg-none position-relative p-0">
       <div
         class="d-flex align-items-center justify-content-between w-100"
@@ -123,6 +120,7 @@
         </li>
       </ul>
     </nav>
+    <!-- Форма оформления заказа -->
     <div class="container mt-4 d-flex justify-content-center">
       <form action="">
         <h1 class="mb-4 text-center">Оформление заказа</h1>
@@ -225,20 +223,21 @@
         </div>
       </form>
     </div>
+    <!-- Скрипт для анимации тулбара -->
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinksContainerMobile = document.getElementsByClassName(
+        "nav-links-container-mobile"
+      )[0];
+      hamburgerMenu.addEventListener("click", () => {
+        setTimeout(
+          () => navLinksContainerMobile.classList.toggle("d-none"),
+          1000
+        );
+        navLinksContainerMobile.classList.toggle("d-flex");
+        navLinksContainerMobile.classList.toggle("animate__slideInDown");
+        navLinksContainerMobile.classList.toggle("animate__slideOutUp");
+      });
+    </script>
   </body>
-  <script>
-    const hamburgerMenu = document.getElementById("hamburger-menu");
-    const navLinksContainerMobile = document.getElementsByClassName(
-      "nav-links-container-mobile"
-    )[0];
-    hamburgerMenu.addEventListener("click", () => {
-      setTimeout(
-        () => navLinksContainerMobile.classList.toggle("d-none"),
-        1000
-      );
-      navLinksContainerMobile.classList.toggle("d-flex");
-      navLinksContainerMobile.classList.toggle("animate__slideInDown");
-      navLinksContainerMobile.classList.toggle("animate__slideOutUp");
-    });
-  </script>
 </html>

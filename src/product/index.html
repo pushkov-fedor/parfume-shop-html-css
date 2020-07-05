@@ -35,6 +35,7 @@
     ></script>
   </head>
   <body>
+    <!-- Navbar для широких экранов -->
     <nav class="navbar d-none d-lg-flex mx-5 px-0">
       <a
         class="navbar-brand d-flex flex-column align-items-center-justify-content-center"
@@ -66,6 +67,7 @@
         </div>
       </div>
     </nav>
+    <!-- Navbar для мобильных экранов -->
     <nav class="navbar d-flex d-lg-none position-relative p-0">
       <div
         class="d-flex align-items-center justify-content-between w-100"
@@ -119,6 +121,7 @@
       </ul>
     </nav>
     <div class="back mx-lg-5 mx-3 mt-3">
+      <!-- Ссылка назад с svg иконкой -->
       <a href="#"
         ><svg
           width="11"
@@ -146,7 +149,9 @@
       >
         <div class="left-wrapper d-flex flex-column align-items-center">
           <img src="./assets/product.png" alt="" />
+          <!-- Навигация для слайдера -->
           <div class="slider-navigation d-flex align-items-center mt-3">
+            <!-- Стрелка влево -->
             <svg
               width="31"
               height="18"
@@ -159,7 +164,9 @@
                 fill="black"
               />
             </svg>
+            <!-- Счетчик, отображающий номер текущей фотографии и количество оставшихся -->
             <span class="current mx-3">1/4</span>
+            <!-- Стрелка вправо -->
             <svg
               width="31"
               height="18"
@@ -173,6 +180,7 @@
               />
             </svg>
           </div>
+          <!-- Выбор объема, который отображается на широких экранах -->
           <div
             class="sizes d-none d-md-flex justify-content-between align-items-center w-100 mt-3 px-1"
           >
@@ -182,6 +190,7 @@
               <option>8 мл</option>
             </select>
           </div>
+          <!-- Цена, которая отображается на широких экранах -->
           <div
             class="prices d-none d-md-flex justify-content-between align-items-center w-100 mt-3 px-1"
           >
@@ -204,6 +213,7 @@
         <p><b>Верхние ноты:</b> итальянский лимон, ягоды можжевельника.</p>
         <p><b>Средние ноты:</b> апельсиновый цвет, роза, ландыш.</p>
         <p><b>Нижние ноты:</b> белый кедр, гуаяк, белый мускус.</p>
+        <!-- Выбор объема, который отображается на мобильных экранах -->
         <div
           class="sizes d-flex d-md-none justify-content-between align-items-center w-100 mt-3 px-1"
         >
@@ -213,6 +223,7 @@
             <option>8 мл</option>
           </select>
         </div>
+        <!-- Цена, которая отображается на мобильных экранах -->
         <div
           class="prices d-flex d-md-none justify-content-between align-items-center w-100 mt-3 px-1"
         >
@@ -224,20 +235,21 @@
     <div class="buy-btn-wrapper d-flex justify-content-center my-4">
       <button>Купить</button>
     </div>
+    <!-- Скрипт для визуализации тулбара -->
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinksContainerMobile = document.getElementsByClassName(
+        "nav-links-container-mobile"
+      )[0];
+      hamburgerMenu.addEventListener("click", () => {
+        setTimeout(
+          () => navLinksContainerMobile.classList.toggle("d-none"),
+          1000
+        );
+        navLinksContainerMobile.classList.toggle("d-flex");
+        navLinksContainerMobile.classList.toggle("animate__slideInDown");
+        navLinksContainerMobile.classList.toggle("animate__slideOutUp");
+      });
+    </script>
   </body>
-  <script>
-    const hamburgerMenu = document.getElementById("hamburger-menu");
-    const navLinksContainerMobile = document.getElementsByClassName(
-      "nav-links-container-mobile"
-    )[0];
-    hamburgerMenu.addEventListener("click", () => {
-      setTimeout(
-        () => navLinksContainerMobile.classList.toggle("d-none"),
-        1000
-      );
-      navLinksContainerMobile.classList.toggle("d-flex");
-      navLinksContainerMobile.classList.toggle("animate__slideInDown");
-      navLinksContainerMobile.classList.toggle("animate__slideOutUp");
-    });
-  </script>
 </html>

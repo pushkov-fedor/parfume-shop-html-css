@@ -33,13 +33,9 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <!-- FontAwesome -->
-    <script
-      src="https://kit.fontawesome.com/bbf6fd1fff.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
+    <!-- Navbar, который отображается на широких экранах -->
     <nav class="navbar d-none d-lg-flex mx-5 px-0">
       <a
         class="navbar-brand d-flex flex-column align-items-center-justify-content-center"
@@ -71,6 +67,7 @@
         </div>
       </div>
     </nav>
+    <!-- Navbar, который отображается на мобильных экранах -->
     <nav class="navbar d-flex d-lg-none position-relative p-0">
       <div
         class="d-flex align-items-center justify-content-between w-100"
@@ -124,11 +121,13 @@
       </ul>
     </nav>
     <div class="container mt-4">
+      <!-- Продукт в корзине-->
       <div class="cart-line d-flex justify-content-center mb-5">
         <div
           class="content-container d-flex flex-column flex-md-row align-items-center position-relative"
         >
           <div class="close-wrapper">
+            <!-- Кнопка удаления -->
             <img src="./assets/close.png" alt="" class="mx-0 mx-md-4" />
           </div>
           <img src="./assets/product1.png" alt="" />
@@ -140,18 +139,23 @@
             </p>
             <span>1300₽, 5мл</span>
           </div>
+          <!-- Кнопки для регулирования количества товара -->
           <div class="amount-controls d-flex align-items-center mt-2 mt-md-0">
+            <!-- Иконка минус -->
             <img src="./assets/minus.png" alt="" />
             <span class="current mx-4">1</span>
+            <!-- Иконка плюс -->
             <img src="./assets/plus.png" alt="" />
           </div>
         </div>
       </div>
+      <!-- Продукт в корзине -->
       <div class="cart-line d-flex justify-content-center mb-5">
         <div
           class="content-container d-flex flex-column flex-md-row align-items-center position-relative"
         >
           <div class="close-wrapper">
+            <!-- Кнопка удаления -->
             <img src="./assets/close.png" alt="" class="mx-0 mx-md-4" />
           </div>
           <img src="./assets/product2.png" alt="" />
@@ -174,20 +178,21 @@
         <span class="price">2400₽</span>
       </div>
     </div>
+    <!-- Скрипт для анимации тулбара -->
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navLinksContainerMobile = document.getElementsByClassName(
+        "nav-links-container-mobile"
+      )[0];
+      hamburgerMenu.addEventListener("click", () => {
+        setTimeout(
+          () => navLinksContainerMobile.classList.toggle("d-none"),
+          1000
+        );
+        navLinksContainerMobile.classList.toggle("d-flex");
+        navLinksContainerMobile.classList.toggle("animate__slideInDown");
+        navLinksContainerMobile.classList.toggle("animate__slideOutUp");
+      });
+    </script>
   </body>
-  <script>
-    const hamburgerMenu = document.getElementById("hamburger-menu");
-    const navLinksContainerMobile = document.getElementsByClassName(
-      "nav-links-container-mobile"
-    )[0];
-    hamburgerMenu.addEventListener("click", () => {
-      setTimeout(
-        () => navLinksContainerMobile.classList.toggle("d-none"),
-        1000
-      );
-      navLinksContainerMobile.classList.toggle("d-flex");
-      navLinksContainerMobile.classList.toggle("animate__slideInDown");
-      navLinksContainerMobile.classList.toggle("animate__slideOutUp");
-    });
-  </script>
 </html>
